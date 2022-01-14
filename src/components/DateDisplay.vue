@@ -17,19 +17,15 @@ export default class DateDisplay extends Vue {
   getDateAsCards(): string {
     const currentDate = new Date();
     const daysInYear = this.daysPassed(currentDate) - 1;
-    console.log("=========DOM-Debug-days=========: ", daysInYear);
     if (daysInYear === 365) {
       return "Black Joker";
     }
     if (daysInYear === 366) {
-      return "White Joker";
+      return "Red Joker";
     }
     const month = Math.floor(daysInYear / (364 / 13));
     const day = daysInYear % 7;
     const week = Math.ceil((daysInYear % (364 / 13)) / 7);
-    console.log("=========DOM-Debug-day=========: ", day);
-    console.log("=========DOM-Debug-week=========: ", week);
-    console.log("=========DOM-Debug-month=========: ", month);
     const weekMap = ["Spades", "Clubs", "Hearts", "Diamonds"];
     const dayMap = [
       "Monday",
