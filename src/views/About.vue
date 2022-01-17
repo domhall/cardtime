@@ -10,7 +10,7 @@
 
     <h3>There are 4 weeks in a month all with 7 days</h3>
     <p>The weeks are:</p>
-    <p>"Spades", "Clubs", "Hearts", "Diamonds"</p>
+    <p>"Clubs", "Diamonds", "Hearts", "Spades"</p>
 
     <h3>There are 7 days in a week and the year always starts on a Monday</h3>
     <p>The days are:</p>
