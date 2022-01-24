@@ -25,7 +25,7 @@ export default class DateDisplay extends Vue {
     }
     const month = Math.floor(daysInYear / (364 / 13));
     const day = daysInYear % 7;
-    const week = Math.ceil((daysInYear % (364 / 13)) / 7);
+    const week = Math.floor((daysInYear % (364 / 13)) / 7);
     const weekMap = ["Clubs", "Diamonds", "Hearts", "Spades"];
 
     const dayMap = [
